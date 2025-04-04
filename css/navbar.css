@@ -1,0 +1,44 @@
+.header-container {
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem; /* Added horizontal padding */
+    height: auto;
+    min-height: 60px;
+    border: 0px solid #000000;
+    border-radius: 15px;
+    background-color: rgba(0, 255, 255, 0.219);
+    margin-top: 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    width: 200px;
+}
+.logo-img{
+    width: 50px;
+}
+.logo-text{
+    font-size: 34px;
+    color: #f1f1f1;
+}
+.nav{
+    display: flex;
+    gap: 20px;
+}
+.nav-link{
+    color: #ffffff;
+    text-decoration: none;
+}
+.contact-button{
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

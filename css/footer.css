@@ -1,0 +1,117 @@
+.footer {
+    width: 100%;
+    background-color: #111;
+    color: #ddd;
+    font-size: 16px;
+    text-align: left;
+    padding: 40px 5% 20px; /* Ensure proper padding */
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; /* Makes the footer structured */
+    gap: 20px;
+}
+
+.top_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top_footer img {
+    height: 60px;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon ion-icon {
+    font-size: 24px;
+    color: #ddd;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.icon ion-icon:hover {
+    color: #f39c12;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+.footer-section {
+    min-width: 220px;
+}
+
+.footer-section h3 {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section a {
+    display: block;
+    color: #aaa;
+    margin: 6px 0;
+    transition: color 0.3s ease;
+    font-size: 14px;
+}
+
+.footer-section a:hover {
+    color: #fff;
+}
+
+.footer-section p {
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer-section input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.read-more {
+    background: none;
+    border: none;
+    color: #f39c12;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+    color: #aaa;
+}
+
+.footer-bottom .heart {
+    color: red;
+}
+
+.footer-bottom .highlight {
+    color: #f39c12;
+    font-weight: bold;
+}
