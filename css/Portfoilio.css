@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes fadeInFrontText {
+    0% { opacity: 0; }
+    100% { opacity: 0.7; }
+  }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(0, 0, 20);
+    color: white;
+    /* overflow-y: scroll; */
+
+}
+
+/* .full-container{
+  box-shadow: inset 0px 0px 20px 1000px rgba(255, 0, 20);
+} */
+
+.area-1 {
+  box-shadow: inset 0px 30px 40px -20px rgba(0, 0, 5);
+}
+
+.area-2 {
+  background-image: url("images/background-1.jpg");
+  /* background-repeat: repeat-x; */
+  background-position: 150% 1%;
+  box-shadow: inset 0px 10px 50px 30px rgba(0, 0, 15);
+  /* animation: fadeIn 1.5s; */
+}
+
+.area-2 .background {
+  background-image: linear-gradient(to right, rgba(0, 0, 20,1),rgba(0, 0, 20,0.8),rgba(0, 0, 20,0));
+}
+
+.title {
+    padding-top: 3vh;
+    text-align: center;
+    font-size: 2rem; 
+    font-weight: 700;
+    animation: fadeIn 1s;
+    transition: all 0.25s;
+}
+
+.under-title {
+    margin-top: 0.25vh;
+    font-size: 1rem;
+    font-weight: 400;
+    animation: fadeIn 1.5s;
+    transition: all 0.25s;
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 3vh;
+}
+
+
+.description-title {
+  font-size: 4rem;
+  font-weight: 1100;
+  animation: fadeIn 1.5s;
+  transition: all 0.25s;
+  color: rgba(255,255,255,1);
+  padding-bottom: 4vh;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255,0.4);
+  width: 90%;
+  margin:auto;
+}
+
+.front-text {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  animation: fadeInFrontText 2s;
+  transition: all 0.25s;
+  padding-bottom: 5vh;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.video-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vh;
+  animation: fadeIn 1.5s;
+}
+
+.front-video {
+  width: 80%;
+  box-shadow: 0px 0px 80px 30px rgba(255, 255, 255,0.1);
+  border: 0px solid rgba(0,0,0,1);
+  border-radius: 3px;
+  margin-bottom: 5vh;
+}
+
+.description {
+  text-align: center;
+  width: 70%;
+  margin: auto;
+  animation: fadeIn 2s;
+  transition: all 0.25s;
+  margin-bottom: 8vh;
+}
+
+.slider-container {
+  position: relative;
+  /* margin-top: 2vh;
+  margin-left: 13%;
+  margin-right: 13%; */
+  margin-bottom: 5vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.carousel {
+  position: relative;
+  border-radius: 1%;
+  width: 800px;
+  height: 450px;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all 0.25s;
+}
+
+.desktop-gradient-cover {
+  position: absolute;
+  width: 1329px;
+  height: 80%;
+  /* background-color: red; */
+  /* opacity: 0.5; */
+  top: 10%;
+  background-image: linear-gradient(to right, rgba(0, 0, 5,1),rgba(0, 0, 8,0.85),rgba(0, 0, 8,0.6), rgba(0, 0, 20,0),rgba(0, 0, 8,0.6),rgba(0, 0, 8,0.85),rgba(0, 0, 5,1));
+  z-index: 50;
+}
+
+.gradient-cover {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  /* background-color: red; */
+  /* opacity: 0.5; */
+  top: 10%;
+  background-image: linear-gradient(to right, rgba(0, 0, 5,1),rgba(0, 0, 8,0.85),rgba(0, 0, 8,0.6), rgba(0, 0, 20,0),rgba(0, 0, 8,0.6),rgba(0, 0, 8,0.85),rgba(0, 0, 5,1));
+  z-index: 50;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 19px;
+  padding-right: 19px;
+  border: none;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 100;
+  text-align: center;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 45%;
+  right: 5%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 19px;
+  padding-right: 19px;
+  border: none;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 100;
+  text-align: center;
+}
+
+.video {
+  border: 2px solid rgba(255,255,255,0.76);
+  position: absolute;
+  object-fit: cover;
+  width: 31%;
+  height: 80%;
+  top: 10%;
+  transition: all 0.5s;
+  z-index: 25;
+  border-radius: 6px;
+}
+
+
+#video-1{
+  left: -33%;
+} 
+
+#video-2{
+  left: 0;
+} 
+
+
+#video-3{
+  width: 35%;
+  height: 100%;
+  top: 0;
+  left: 32.5%;
+  z-index: 75;
+} 
+
+
+#video-4{
+  left: 69%;
+} 
+
+#video-5{
+  left: 102%;
+} 
+
+
+
+
+
+
+/* .description:hover, .under-title:hover, .title:hover, .videos-title:hover {
+    text-shadow: 0px 0px 4px rgba(0,0,0,0.4);
+} */
+
+.videos-title {
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    /* animation: fadeIn 2.5s; */
+    transition: all 0.25s;
+}
+
+/* when screen is smaller vvv */
+@media screen and (max-width: 900px) {
+
+  .area-2 {
+    /* background-repeat: repeat-x; */
+    background-position: -100% 1%;
+    box-shadow: inset 0px 10px 50px 30px rgba(0, 0, 15);
+
+  }
+
+  .desktop-gradient-cover {
+    display: none;
+  }
+
+  .carousel {
+    width: 540px;
+    height: 310px;
+  }
+
+  .description {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+
+  .carousel {
+    width: 590px;
+    height: 330px;
+  }
+
+  .desktop-gradient-cover{
+    width: 981px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+
+  .carousel {
+    width: 340px;
+    height: 210px;
+  }
+
+  .left-arrow {
+    font-size: 1.5rem;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 8.5%;
+  }
+  
+  .right-arrow {
+    font-size: 1.5rem;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    right: 8.5%;
+
+  }
+}
+
+
+/* when screen is bigger vvv */
+@media screen and (min-width: 900px) {
+  .front-video {
+      width: 50%;
+  }
+  
+  .front-text {
+    width: 50%;
+  }
+  .carousel {
+    overflow: visible;
+  }
+
+  .gradient-cover {
+    display: none;
+  }
+
+}
+
+.fade-in-element-NOTUSING {
+    opacity: 0; /* Initially invisible */
+    transform: translateY(20px); /* Initially shifted downward */
+    transition: opacity 0.5s, transform 0.5s; /* Smooth transition */
+}
+
+.fade-in-NOTUSING {
+    opacity: 1;
+    transform: translateY(0);
+}
