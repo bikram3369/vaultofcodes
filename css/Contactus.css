@@ -11,7 +11,7 @@ body {
     width: 100vw;
     text-align: center;
     background-color: #f1f1f1;
-    background: url('../images/mainbg.webp') no-repeat center center;
+    background: url('../images/mainbg.webp') repeat center center;
     background-size: cover;
 }
 .form {
