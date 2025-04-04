@@ -1,0 +1,107 @@
+/* Container to center the form */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+
+}
+body {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background-color: #f1f1f1;
+    background: url('../images/mainbg.webp') no-repeat center center;
+    background-size: cover;
+}
+.form {
+    max-width: 600px;
+    margin: 80px auto; /* Adds space at top and bottom */
+    background-color: rgba(53, 46, 46, 0.76);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Flex row for first and last name */
+.flex {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+}
+
+.input, .input01, input[type="tel"] {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    margin-top: 5px;
+}
+
+textarea.input01 {
+    resize: none;
+    height: 100px;
+}
+
+label span {
+    color: #ccc;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* Submit button style */
+.fancy {
+    position: relative;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.fancy:hover {
+    background-color: #0056b3;
+}
+
+.fancy .text {
+    position: relative;
+    z-index: 2;
+}
+
+/* Optional keys (decorative spans) */
+.fancy .top-key,
+.fancy .bottom-key-1,
+.fancy .bottom-key-2 {
+    display: none; /* Hide or customize later if needed */
+}
+
+/* Responsive: stack input fields on small screens */
+@media screen and (max-width: 600px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .form {
+        padding: 20px;
+    }
+}

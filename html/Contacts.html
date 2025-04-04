@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Navbar</title>
     <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/Portfoilio.css">
+    <link rel="stylesheet" href="../css/Contactus.css">
     <link rel="stylesheet" href="../css/footer.css"> <!-- Link to footer CSS -->
-    <link rel="stylesheet" href="../css/fadeslide.css">
-    
+    <script defer src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
 </head>
 
@@ -34,71 +33,45 @@
     </header>
 
     <!-- Main Content -->
-    <div class="full-container">
-        <div class="area-1">
-          <div class="title">
-            EDITKARO.IN.
-            <div class="under-title">EDIT creativity</div>
-            <div class="description-title">SOCIAL MEDIA MARKETING</div>
-          </div>
-          <div class="front-text">
-            Ad Creation with direct response marketing and high converting CTAs
-          </div>
-  
-          <div class="video-area">
-            <video id="front-video" class="front-video" controls>
-              <source src="../videos/front-video.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-        <div class="area-2">
-          <div class="background">
-            <div class="description">
-              With a keen eye for detail and a dedication to bringing visions to
-              life, I specialize in weaving together visuals that captivate,
-              inspire, and evoke emotion. From short-form content to polished
-              long-form productions, each project is a testament to creativity,
-              technical expertise, and the magic of cinematic editing at its
-              finest. Explore this collection and experience the artistry of
-              visual storytelling.
-            </div>
-            <div class="videos">
-              <div class="videos-title fade-in">Videos</div>
-  
-              <div class="slider-container fade-in">
-                <div class="desktop-gradient-cover"></div>
-                <div class="carousel" id="carousel">
-                  <div class="gradient-cover"></div>
-                  <button id="left-arr" class="left-arrow"><</button>
-                  <button id="right-arr" class="right-arrow">></button>
-                  <video id="video-1" class="video" width="55%">
-                    <div class="video-box"></div>
-                    <source src="../videos/video-1.mp4#t=0.001" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <video id="video-2" class="video" width="55%">
-                    <source src="../videos/video-2.mp4#t=0.001" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <video id="video-3" class="video" width="55%" controls>
-                    <source src="../videos/video-3.mp4#t=0.001" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <video id="video-4" class="video" width="55%">
-                    <source src="../videos/video-4.mp4#t=0.001" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                  <video id="video-5" class="video" width="55%">
-                    <source src="../videos/video-5.mp4#t=0.001" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    
+   <!-- From Uiverse.io by Sr-Ajo --> 
+<form class="form">
+    
+    <div class="flex">
+        <label>
+            <input class="input" type="text" placeholder="" required="">
+            <span>first name</span>
+        </label>
 
+        <label>
+            <input class="input" type="text" placeholder="" required="">
+            <span>last name</span>
+        </label>
+    </div>  
+            
+    <label>
+        <input class="input" type="email" placeholder="" required="">
+        <span>email</span>
+    </label> 
+        
+    <label>
+        <input class="input" placeholder="" type="tel" required="">
+        <span>contact number</span>
+    </label>
+    <label>
+        <textarea class="input01" placeholder="" rows="3" required=""></textarea>
+        <span>message</span>
+    </label>
+    
+    <button href="#" class="fancy">
+      <span class="top-key"></span>
+      <span class="text">submit</span>
+      <span class="bottom-key-1"></span>
+      <span class="bottom-key-2"></span>
+    </button>
+</form>
+      
+    
     <!-- Footer Section -->
     <footer class="footer">
         <div class="top_footer">
@@ -155,6 +128,5 @@
     </footer>
 
 </body>
-<script defer src="../JS/script.js"></script>
-<script src="../JS/fadeslide.js"></script>
+
 </html>
