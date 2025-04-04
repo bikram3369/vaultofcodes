@@ -24,7 +24,9 @@ body {
     backdrop-filter: blur(5px);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 20px;
+    
 }
 
 /* Flex row for first and last name */
@@ -42,7 +44,7 @@ label {
 }
 
 .input, .input01, input[type="tel"] {
-    padding: 12px;
+    padding: 6px;
     border: none;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.1);
