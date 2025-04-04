@@ -1,76 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Navbar</title>
-    <link rel="stylesheet" href="../css/navbar.css">
-    <link rel="stylesheet" href="../css/Contactus.css">
-    <link rel="stylesheet" href="../css/footer.css"> <!-- Link to footer CSS -->
-    <script defer src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/Contactus.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <script defer src="contact-script.js"></script> <!-- Your JavaScript file -->
+  <script src="https://cdn.jsdelivr.net/npm/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
 </head>
 
 <body>
+  <!-- Navbar -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#logo" class="logo">
+        <img src="../images/logo-default-399x82.png" class="logo-img" alt="Logo">
+        <span class="logo-text">EditKaro.in</span>
+      </a>
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../html/About.html" class="nav-link">About</a>
+        <a href="../html/Portfolio.html" class="nav-link">Portfolio</a>
+        <a href="../html/Services.html" class="nav-link">Services</a>
+        <a href="../html/Contact.html" class="nav-link">Contact</a>
+      </nav>
+      <a href="../html/Contacts.html" class="contact-button">Contact Us</a>
+    </div>
+  </header>
 
-    <!-- Header Section -->
-    <header class="header">
-        <div class="header-container">
-            <a href="#logo" class="logo">
-                <img src="../images/logo-default-399x82.png" class="logo-img" alt="Logo">
-                <span class="logo-text">EditKaro.in</span>
-            </a>
-            <nav class="nav">
-                <a href="../index.html" class="nav-link">Home</a>
-                <a href="../html/About.html" class="nav-link">About</a>
-                <a href="../html/Portfolio.html" class="nav-link">Portfolio</a>
-                <a href="../html/Services.html" class="nav-link">Services</a>
-                <a href="../html/Contact.html" class="nav-link">Contact</a>
-            </nav>
-            <a href="../html/Contacts.html" class="contact-button">Contact Us</a>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    
-   <!-- From Uiverse.io by Sr-Ajo --> 
-<form class="form">
-    
+  <!-- Contact Form -->
+  <form class="form" id="contact-form">
     <div class="flex">
-        <label>
-            <input class="input" type="text" placeholder="" required="">
-            <span>first name</span>
-        </label>
-
-        <label>
-            <input class="input" type="text" placeholder="" required="">
-            <span>last name</span>
-        </label>
-    </div>  
-            
+      <label>
+        <input class="input" type="text" name="firstName" required>
+        <span>First Name</span>
+      </label>
+      <label>
+        <input class="input" type="text" name="lastName" required>
+        <span>Last Name</span>
+      </label>
+    </div>
     <label>
-        <input class="input" type="email" placeholder="" required="">
-        <span>email</span>
-    </label> 
-        
-    <label>
-        <input class="input" placeholder="" type="tel" required="">
-        <span>contact number</span>
+      <input class="input" type="email" name="email" required>
+      <span>Email</span>
     </label>
     <label>
-        <textarea class="input01" placeholder="" rows="3" required=""></textarea>
-        <span>message</span>
+      <input class="input" type="tel" name="contactNumber" required>
+      <span>Contact Number</span>
     </label>
-    
-    <button href="#" class="fancy">
+    <label>
+      <textarea class="input01" name="message" required></textarea>
+      <span>Message</span>
+    </label>
+    <button class="fancy" type="submit">
       <span class="top-key"></span>
-      <span class="text">submit</span>
+      <span class="text">Submit</span>
       <span class="bottom-key-1"></span>
       <span class="bottom-key-2"></span>
     </button>
-</form>
-      
+    <p id="response-message" style="color: lightgreen; margin-top: 10px;"></p>
+  </form>
+
     
     <!-- Footer Section -->
     <footer class="footer">
@@ -128,5 +120,5 @@
     </footer>
 
 </body>
-
+<script src="../JS/contacts.js"></script>
 </html>
